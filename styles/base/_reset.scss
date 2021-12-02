@@ -90,6 +90,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -136,4 +137,9 @@ table {
 
 input:focus {
 	outline: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
