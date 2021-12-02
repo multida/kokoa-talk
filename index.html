@@ -30,9 +30,10 @@
     <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
   </header>
 
-  <form id="login-form">
-    <input type="text" placeholder="Email of phone number" required />
-    <input type="password" placeholder="Password" required />
+  <!--method 보낼 서버가 없거나 보안상의 문제가 없다면 GET 사용 / 보안 문제가 있거나 서버로 보내고 싶으면 POST-->
+  <form action="friend.html" method="GET" id="login-form">
+    <input name="username" type="text" placeholder="Email of phone number" required />
+    <input name="password" type="password" placeholder="Password" required />
     <input type="submit" value="Log In" />
 
     <a href="#">Find KokoaTalk Account or Password</a>
