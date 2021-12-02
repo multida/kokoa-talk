@@ -1,0 +1,31 @@
+.status-bar {
+  display: flex;
+  // 가운데 정렬로 안보여서 css 핵을 사용 
+  // justify-content: space-between;  
+  justify-content: center;
+  padding: 5px 3px;
+
+  &__column {
+    display: flex;
+    width: 33%;
+
+    &:first-child span {
+      margin-right: 5px;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &:last-child {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      >* {
+        margin: 0 3px;
+      }
+    }
+  }
+}
