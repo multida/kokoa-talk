@@ -1,5 +1,9 @@
 @import './base/reset';
 @import './base/common';
 
-@import './layouts/status-bar';
-@import './layouts/welcome-header';
+@import './constants/colors';
+
+@import './components/status-bar';
+
+@import './screens/welcome-header';
+@import './screens/login-form';
