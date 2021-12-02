@@ -1,9 +1,11 @@
 @import './base/reset';
 @import './base/common';
+@import './base/globals';
 
 @import './constants/colors';
 
 @import './components/status-bar';
+@import './components/nav-bar';
 
 @import './screens/welcome-header';
 @import './screens/login-form';
