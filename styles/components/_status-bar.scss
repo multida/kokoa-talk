@@ -1,4 +1,8 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   // 가운데 정렬로 안보여서 css 핵을 사용 
   // justify-content: space-between;  
