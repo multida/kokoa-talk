@@ -1,0 +1,56 @@
+.user-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__column:first-child {
+    display: flex;
+    align-items: center;
+  }
+
+  &__column:last-child {
+    display: flex;
+    align-items: flex-end;
+    color: $gray;
+
+    i {
+      margin-left: 5px;
+    }
+  }
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
+  &__avatar--xl {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__avatar--sm {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    ;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__title--not-bold {
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    color: $gray;
+  }
+
+}

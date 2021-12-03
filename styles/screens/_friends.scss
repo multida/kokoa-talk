@@ -1,12 +1,31 @@
 .friends-display-link {
   display: block;
   padding: 10px 20px;
-  margin-top: 80px;
+  margin-top: 100px;
+  margin-bottom: 10px;
   text-align: center;
   background-color: #fafafa;
-  font-size: 16px;
+  font-size: 18px;
 
   i {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.friends-screen {
+  padding: $horizontal-size;
+
+  &__channel {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+  }
+
+  &__channel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    color: $gray;
   }
 }

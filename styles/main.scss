@@ -4,10 +4,12 @@
 @import './base/globals';
 
 @import './constants/colors';
+@import './constants/sizes';
 
 @import './components/status-bar';
 @import './components/nav-bar';
 @import './components/screen-header';
+@import './components/user-component';
 
 @import './screens/welcome-header';
 @import './screens/login-form';
