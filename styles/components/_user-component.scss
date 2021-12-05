@@ -10,12 +10,14 @@
 
   &__column:last-child {
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
     color: $gray;
+  }
 
-    i {
-      margin-left: 5px;
-    }
+  &__time {
+    display: block;
+    margin-bottom: 10px;
   }
 
   &__avatar {
