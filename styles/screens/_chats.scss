@@ -1,6 +1,7 @@
 .find-icons {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 25px;
   border-bottom: $main-border;
 
   &__icon {
@@ -12,5 +13,11 @@
       margin-bottom: 15px;
       font-size: 30px;
     }
+  }
+}
+
+.recommended-friends {
+  &__title {
+    font-size: 14px;
   }
 }
