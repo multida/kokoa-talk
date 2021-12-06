@@ -1,8 +1,6 @@
 .find-icons {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
-  border-bottom: $main-border;
 
   &__icon {
     display: flex;
@@ -17,7 +15,86 @@
 }
 
 .recommended-friends {
+  padding: 25px 0;
+  margin: 25px 0;
+  border-top: $main-border;
+  border-bottom: $main-border;
+
   &__title {
     font-size: 14px;
+    color: $gray;
   }
+
+  span {
+    display: block;
+    margin: 100px 0;
+    text-align: center;
+    color: $gray;
+    font-size: 20px;
+  }
+}
+
+.open-chat {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    opacity: 0.8;
+
+    span {
+      opacity: 0.6;
+    }
+  }
+
+
+  &__title {
+    font-size: 18px;
+  }
+}
+
+.open-post {
+  display: flex;
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__hashtags {
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  &__members {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &-count {
+      opacity: 0.5;
+      font-size: 14px;
+    }
+
+    .divider {
+      width: 2px;
+      height: 12px;
+      margin: 1px 5px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &-status {
+      color: #ffb0e0;
+    }
+  }
+
+
 }
