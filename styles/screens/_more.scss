@@ -1,0 +1,26 @@
+.more-screen {
+  .icon-row {
+    flex-wrap: nowrap;
+    margin-top: 35px;
+  }
+
+  .more-suggestions {
+    padding-top: 40px;
+    margin-top: 50px;
+    border-top: $main-border;
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__icons {
+      display: flex;
+
+      &__icon-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+      }
+    }
+  }
+}
