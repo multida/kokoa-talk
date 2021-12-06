@@ -46,7 +46,6 @@
     }
   }
 
-
   &__title {
     font-size: 18px;
   }
@@ -54,6 +53,8 @@
 
 .open-post {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__title {
     margin-bottom: 5px;
@@ -96,5 +97,30 @@
     }
   }
 
+  &__photo {
+    position: relative;
 
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+  &__heart-count {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border-radius: 20px;
+    
+    span {
+      margin-left: 3px;
+      font-size: 12px;
+    }
+  }
 }
