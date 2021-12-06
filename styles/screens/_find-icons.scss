@@ -1,6 +1,7 @@
 .find-icons {
   display: flex;
   justify-content: space-between;
+  border-bottom: $main-border;
 
   &__icon {
     display: flex;
