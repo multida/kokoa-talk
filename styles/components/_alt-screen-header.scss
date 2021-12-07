@@ -9,6 +9,7 @@
   padding: $horizontal-size;
   margin-bottom: 15px;
   background-color: #fff;
+  z-index: 1;
 
   &__column {
     &:first-child {
