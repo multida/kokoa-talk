@@ -1,3 +1,29 @@
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+    
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .nav {
   position: fixed;
   bottom: 0;
@@ -12,8 +38,23 @@
     justify-content: space-between;
   }
 
-  &__link {
+  &_item {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtnAnimation 0.3s ease-in-out forwards;
+  }
 
+  &_item:nth-child(2) {
+    animation-delay: .3s;
+  }
+  &_item:nth-child(3) {
+    animation-delay: .6s;
+  }
+  &_item:last-child {
+    animation-delay: .9s;
+  }
+
+  &__link {
     display: block;
     padding: 20px 40px;
     color: #2e363e;
@@ -27,6 +68,7 @@
     position: absolute;
     top: -5px;
     right: -5px;
+    animation: notificationAnimation 1.5s ease-in-out infinite;
   }
 
   &__new {
@@ -39,3 +81,4 @@
     background-color: tomato;
   }
 }
+

@@ -5,16 +5,16 @@
   border-bottom: $main-border;
 
   &__title {
-    font-size: 14px;
     color: $gray;
+    font-size: 14px;
   }
 
   span {
+    color: $gray;
     display: block;
+    font-size: 20px;
     margin: 100px 0;
     text-align: center;
-    color: $gray;
-    font-size: 20px;
   }
 }
 
@@ -23,10 +23,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    opacity: 0.8;
+    opacity: .8;
 
     span {
-      opacity: 0.6;
+      opacity: .6;
     }
   }
 
@@ -41,14 +41,14 @@
   align-items: center;
 
   &__title {
-    margin-bottom: 5px;
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 5px;
   }
 
   &__hashtags {
+    opacity: .6;
     text-transform: uppercase;
-    opacity: 0.6;
   }
 
   &__members {
@@ -85,26 +85,26 @@
     position: relative;
 
     img {
+      border-radius: 12px;
       width: 120px;
       height: 120px;
       object-fit: cover;
-      border-radius: 12px;
     }
   }
   &__heart-count {
     display: flex;
-    align-items: center;
     position: absolute;
+    align-items: center;
     bottom: 10px;
+    color: #fff;
     right: 10px;
     padding: 5px 10px;
     background-color: rgba(0,0,0,0.5);
-    color: #fff;
     border-radius: 20px;
-    
+
     span {
-      margin-left: 3px;
       font-size: 12px;
+      margin-left: 3px;
     }
   }
 }
