@@ -8,18 +8,35 @@
     padding-top: 40px;
     margin-top: 50px;
     border-top: $main-border;
+
     &__title {
       margin-bottom: 30px;
     }
 
     &__icons {
       display: flex;
+    }
 
-      &__icon-image {
+    &__icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 30px;
+
+      &-image {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        background-color: $yellow;
+        border-radius: 15px;
+
+        i {
+          font-size: 30px;
+          color: #fff;
+        }
       }
     }
   }
