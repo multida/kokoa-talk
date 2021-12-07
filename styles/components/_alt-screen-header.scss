@@ -1,0 +1,30 @@
+.alt-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 26px;
+  width: 100%;
+  left: 0;
+  padding: $horizontal-size;
+  margin-bottom: 15px;
+  background-color: #fff;
+
+  &__column {
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+
+
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+}
