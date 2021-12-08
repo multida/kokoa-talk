@@ -1,3 +1,20 @@
+@keyframes heartBeat {
+  0% {
+    color: #fff;
+    transform: none;
+  }
+
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+
+  100% {
+    color: #fff;
+    transform: none;
+  }
+}
+
 .recommended-friends {
   padding: 25px 0;
   margin: 25px 0;
@@ -91,6 +108,7 @@
       object-fit: cover;
     }
   }
+
   &__heart-count {
     display: flex;
     position: absolute;
@@ -99,12 +117,23 @@
     color: #fff;
     right: 10px;
     padding: 5px 10px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+      i {
+        will-change: transform;
+        animation: heartBeat 1s linear infinite;
+      }
+    }
+
+
 
     span {
       font-size: 12px;
       margin-left: 3px;
     }
+
   }
 }

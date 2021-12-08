@@ -10,8 +10,8 @@
   background-color: $yellow;
   z-index: 2;
   font-size: 130px;
-  animation: hideSplashScreen .4s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: hideSplashScreen .3s ease-in-out forwards;
+  animation-delay: 0.6s;
 }
 
 @keyframes hideSplashScreen {
