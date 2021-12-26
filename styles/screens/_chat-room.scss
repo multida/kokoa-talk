@@ -12,8 +12,11 @@
 
 #chat-screen {
   background-color: #abc1d1 !important;
-
   height: 200vh;
+
+  .status-bar {
+    background-color: #abc1d1 !important;
+  }
 }
 
 .main-chat {

@@ -1,12 +1,16 @@
 .more-screen {
   .icon-row {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 35px;
+
+    &__icon {
+      width: 33.3333%;
+      margin-bottom: 30px;
+    }
   }
 
   .more-suggestions {
-    padding-top: 40px;
-    margin-top: 50px;
+    padding-top: 30px;
     border-top: $main-border;
 
     &__title {
@@ -21,7 +25,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 30px;
+      justify-content: flex-start;
+      width: 33.3333%;
 
       &-image {
         display: flex;
@@ -37,6 +42,9 @@
           font-size: 30px;
           color: #fff;
         }
+      }
+      &-text {
+        text-align: center;
       }
     }
   }

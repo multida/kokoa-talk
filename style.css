@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -174,7 +174,7 @@ body {
       justify-content: flex-end;
       align-items: center; }
       .status-bar__column:last-child > * {
-        margin: 0 4px; }
+        margin: 0 3px; }
 
 .badge {
   display: flex;
@@ -213,6 +213,7 @@ body {
     display: flex;
     justify-content: space-between; }
   .nav_item {
+    width: 25%;
     transform: translateY(50px);
     opacity: 0;
     animation: appearBtnAnimation 0.3s ease-in-out forwards; }
@@ -544,11 +545,13 @@ body {
       margin-left: 3px; }
 
 .more-screen .icon-row {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 35px; }
+  .more-screen .icon-row__icon {
+    width: 33.3333%;
+    margin-bottom: 30px; }
 .more-screen .more-suggestions {
-  padding-top: 40px;
-  margin-top: 50px;
+  padding-top: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.2); }
   .more-screen .more-suggestions__title {
     margin-bottom: 30px; }
@@ -558,7 +561,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 30px; }
+    justify-content: flex-start;
+    width: 33.3333%; }
     .more-screen .more-suggestions__icon-image {
       display: flex;
       align-items: center;
@@ -571,6 +575,8 @@ body {
       .more-screen .more-suggestions__icon-image i {
         font-size: 30px;
         color: #fff; }
+    .more-screen .more-suggestions__icon-text {
+      text-align: center; }
 
 .settings__item {
   display: flex;
@@ -598,6 +604,8 @@ body {
 #chat-screen {
   background-color: #abc1d1 !important;
   height: 200vh; }
+  #chat-screen .status-bar {
+    background-color: #abc1d1 !important; }
 
 .main-chat {
   display: flex;
